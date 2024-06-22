@@ -29,3 +29,5 @@ packages/
 *.userosscache
 *.sln.docstates
 *.sln.ide
+
+obj/Debug

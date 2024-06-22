@@ -23,6 +23,30 @@ namespace sad
 		public MainWindow()
 		{
 			InitializeComponent();
+			AdjustWindowToAllScreens(this);
+			SourceInitialized += OnSourceInitialized;
+		}
+		private void OnSourceInitialized(object sender, EventArgs e)
+		{
+			AdjustWindowToAllScreens(this);
+		}
+
+		private void AdjustWindowToAllScreens(Window window)
+		{
+			// Initialize with primary screen size
+			var minLeft = SystemParameters.VirtualScreenLeft;
+			var minTop = SystemParameters.VirtualScreenTop;
+			var maxRight = SystemParameters.VirtualScreenLeft + SystemParameters.VirtualScreenWidth;
+			var maxBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
+
+			// Set window position and size
+			window.Left = minLeft;
+			window.Top = minTop;
+			window.Width = maxRight - minLeft;
+			window.Height = maxBottom - minTop;
+
+			window.WindowState = WindowState.Maximized;
 		}
 	}
 }
+

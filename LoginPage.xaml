@@ -5,44 +5,57 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:sad"
              mc:Ignorable="d" 
-             d:DesignHeight="1080" d:DesignWidth="1920">
-    <Grid>
+             d:DesignHeight="450" d:DesignWidth="400">
+
+    <Grid Margin="40" Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="120"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="5"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="55"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="auto"/>
-        </Grid.ColumnDefinitions>
-    
+        <!-- Logo and Title -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" Margin="0,0,0,40">
+            <Ellipse Width="40" Height="40" Fill="Orange"/>
+            <TextBlock Text="DisasterSafe" FontSize="30" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        </StackPanel>
 
-        <Image Grid.Row="1"  Grid.Column="1" Height="120" Width="120"/>
-        <Label Grid.Row="3"  Grid.Column="1" Content="Title" Foreground="#270c46" FontSize="96" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Label Grid.Row="5"  Grid.Column="1" Content="Вход" Foreground="#270c46" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <!-- Encouraging Text -->
+        <TextBlock Grid.Row="1" Text="Вход"
+                   FontSize="32" TextWrapping="Wrap" Margin="0,0,0,40" HorizontalAlignment="Center" TextAlignment="Center"/>
 
-        <Label Grid.Row="7"  Grid.Column="1" Content="E-mail:" Foreground="#270c46" FontSize="56" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,400,0"/>
-        <TextBox Grid.Row="7"  Grid.Column="1" x:Name="TextBoxEmail" Height="80" Width="440" HorizontalAlignment="Center" Margin="400,0,0,0"/>
+        <!-- Registration Form -->
+        <Grid Grid.Row="2" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <Label Grid.Row="9"  Grid.Column="1" Content="Парола:" Foreground="#270c46" FontSize="56" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,400,0"/>
-        <TextBox Grid.Row="9"  Grid.Column="1" x:Name="TextBoxPassword" Height="80" Width="440" HorizontalAlignment="Center" Margin="400,0,0,0"/>
+            <!-- Progress Bar -->
+            <ProgressBar Grid.Row="0" Height="15" Value="33" Foreground="Orange" Margin="0,0,0,20"/>
 
-        <Label Grid.Row="11"  Grid.Column="1" Content="Нямаш акаунт? Регистритай се тук." Foreground="#0000EE" FontStyle="Oblique" FontSize="32" HorizontalAlignment="Center" MouseLeftButtonUp="Register_Click"/>
-        <Button Grid.Row="13" Grid.Column="1" x:Name="ButtonLogin" Click="ButtonLogin_Click" Content="Login" FontSize="40" Height="70" Width="240" VerticalContentAlignment="Center"/>
+            <!-- Username Field -->
+            <TextBox Grid.Row="1" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                <TextBox.Text>John Doe</TextBox.Text>
+            </TextBox>
+
+            <!-- Email Field -->
+            <TextBox x:Name="TextBoxEmail" Grid.Row="2" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                <TextBox.Text>johndoe@gmail.com</TextBox.Text>
+            </TextBox>
+
+            <!-- Password Field -->
+            <PasswordBox x:Name="PasswordBoxLogin" Grid.Row="3" Margin="0,0,0,40" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+
+            <!-- Next Step Button -->
+            <Button Grid.Row="4" Height="60" Content="Следваща стъпка" FontSize="18" Foreground="White" Background="Orange" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+        </Grid>
+
+        <!-- Already have an account -->
+        <TextBlock Grid.Row="3" Text="Имаш вече профил? ВЛЕЗ ТУК" FontSize="16" Foreground="Orange" HorizontalAlignment="Center" Margin="0,40,0,0"/>
     </Grid>
+
 </UserControl>

@@ -1,1 +1,31 @@
 .vs
+
+# Ignore build outputs
+/bin/
+/obj/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/
+/.nuget/
+
+# Ignore Visual Studio specific files
+.vscode/
+/.vscode/
+/.vscode/
+.vscode/
+.vscode/
+.vscode/
+/.vscode/
+/.vscode/
+/.vscode/
+/.vscode/
+/.vscode/
+/.vscode/
+/.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide

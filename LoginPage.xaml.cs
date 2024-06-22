@@ -95,7 +95,7 @@ namespace sad
 
 		private void Register_Click(object sender, RoutedEventArgs e) //Forwards the user to the 'Register Page' UserControl
 		{
-
+			MessageBox.Show("nigger");
 		}
 
 

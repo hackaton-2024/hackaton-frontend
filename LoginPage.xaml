@@ -17,7 +17,7 @@
 
         <!-- Logo and Title -->
         <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" Margin="0,0,0,40">
-            <Ellipse Width="40" Height="40" Fill="Orange"/>
+            <Ellipse Width="40" Height="40" Fill="#FFFB6D0E"/>
             <TextBlock Text="DisasterSafe" FontSize="30" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0"/>
         </StackPanel>
 
@@ -35,27 +35,34 @@
             </Grid.RowDefinitions>
 
             <!-- Progress Bar -->
-            <ProgressBar Grid.Row="0" Height="15" Value="33" Foreground="Orange" Margin="0,0,0,20"/>
+            <ProgressBar Grid.Row="0" Height="15" Value="100" Margin="0,0,0,20" MaxWidth="300" Orientation="Vertical">
+                <ProgressBar.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFB6D0E" Offset="0.007"/>
+                        <GradientStop Color="#FFE82B00" Offset="1"/>
+                    </LinearGradientBrush>
+                </ProgressBar.Foreground>
+            </ProgressBar>
 
             <!-- Username Field -->
-            <TextBox Grid.Row="1" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <TextBox Grid.Row="1" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300">
                 <TextBox.Text>John Doe</TextBox.Text>
             </TextBox>
 
             <!-- Email Field -->
-            <TextBox x:Name="TextBoxEmail" Grid.Row="2" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <TextBox x:Name="TextBoxEmail" Grid.Row="2" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300">
                 <TextBox.Text>johndoe@gmail.com</TextBox.Text>
             </TextBox>
 
             <!-- Password Field -->
-            <PasswordBox x:Name="PasswordBoxLogin" Grid.Row="3" Margin="0,0,0,40" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+            <PasswordBox x:Name="PasswordBoxLogin" Grid.Row="3" Margin="0,0,0,40" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300"/>
 
             <!-- Next Step Button -->
-            <Button Grid.Row="4" Height="60" Content="Следваща стъпка" FontSize="18" Foreground="White" Background="Orange" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+            <Button Grid.Row="4" Height="60" Content="Влез" FontSize="18" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300" Background="#FFFB6D0E"/>
         </Grid>
 
         <!-- Already have an account -->
-        <TextBlock Grid.Row="3" Text="Имаш вече профил? ВЛЕЗ ТУК" FontSize="16" Foreground="Orange" HorizontalAlignment="Center" Margin="0,40,0,0"/>
+        <Label Grid.Row="3" Content="Нямаш профил? НАПРАВИ СИ ТУК!" FontSize="16" Foreground="Orange" HorizontalAlignment="Center" Margin="0,40,0,0" MouseLeftButtonUp="Register_Click"/>
     </Grid>
 
 </UserControl>

@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:sad"
              mc:Ignorable="d" 
-             d:Height="400" d:Width="200"
+             d:Height="350" d:Width="200"
 
              >
     <Grid>
-        <ProgressBar Name="progressBar" Width="100" Height="20" Value ="0" Minimum="0" Maximum="100" Margin="10"/>
+        <ProgressBar Name="progressBar" Width="100" Height="20" Value ="0" Minimum="0" Maximum="100" Margin="50,263,50,117"/>
     </Grid>
 </UserControl>

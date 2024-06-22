@@ -47,6 +47,7 @@ namespace sad
 
 			window.WindowState = WindowState.Maximized;
 		}
+
 	}
 }
 

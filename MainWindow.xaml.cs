@@ -25,6 +25,7 @@ namespace sad
 			InitializeComponent();
 			AdjustWindowToAllScreens(this);
 			SourceInitialized += OnSourceInitialized;
+			MainContent.Content = new LoginPage();
 		}
 		private void OnSourceInitialized(object sender, EventArgs e)
 		{

@@ -15,3 +15,8 @@ D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debu
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\sad.pdb
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoginPage.g.cs
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoginPage.baml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\bin\Debug\Newtonsoft.Json.xml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\HomePage.g.cs
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\HomePage.baml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\hackaton.csproj.CopyComplete

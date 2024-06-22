@@ -16,12 +16,18 @@ C:\Users\USER\source\repos\hackaton-frontend\App.xaml
 6-502434485
 =======
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\App.xaml
-2-733414255
+3212987035
 
+<<<<<<< HEAD
 61732194693
 >>>>>>> ee32fc1abe0daff7d72ecb91d6d5c4152635eea9
 13-1310406943
 LoginPage.xaml;MainWindow.xaml;
+=======
+71946401803
+14-1281244170
+HomePage.xaml;LoginPage.xaml;MainWindow.xaml;
+>>>>>>> 4012b8e7589937edfbc161c530503c3c579fceef
 
 True
 

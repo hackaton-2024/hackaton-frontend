@@ -1,52 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using sad;
+using System;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
-namespace sad
+namespace WpfApp
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			AdjustWindowToAllScreens(this);
-			SourceInitialized += OnSourceInitialized;
-		}
-		private void OnSourceInitialized(object sender, EventArgs e)
-		{
-			AdjustWindowToAllScreens(this);
-		}
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            MainContent.Content = new LoadingPage
+                ();
+         
+        }
 
-		private void AdjustWindowToAllScreens(Window window)
-		{
-			// Initialize with primary screen size
-			var minLeft = SystemParameters.VirtualScreenLeft;
-			var minTop = SystemParameters.VirtualScreenTop;
-			var maxRight = SystemParameters.VirtualScreenLeft + SystemParameters.VirtualScreenWidth;
-			var maxBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
-
-			// Set window position and size
-			window.Left = minLeft;
-			window.Top = minTop;
-			window.Width = maxRight - minLeft;
-			window.Height = maxBottom - minTop;
-
-			window.WindowState = WindowState.Maximized;
-		}
-	}
+       
+    }
 }
-

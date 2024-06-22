@@ -13,3 +13,21 @@ D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debu
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\hackaton.csproj.CoreCompileInputs.cache
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\sad.exe
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\sad.pdb
+C:\Users\USER\source\repos\hackaton-frontend\bin\Debug\sad.exe.config
+C:\Users\USER\source\repos\hackaton-frontend\bin\Debug\sad.exe
+C:\Users\USER\source\repos\hackaton-frontend\bin\Debug\sad.pdb
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\hackaton.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\MainWindow.g.cs
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\App.g.cs
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\sad_MarkupCompile.cache
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\sad_MarkupCompile.lref
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\MainWindow.baml
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\sad.g.resources
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\sad.Properties.Resources.resources
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\hackaton.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\hackaton.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\sad.exe
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\sad.pdb
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\LoadingPage.g.cs
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\LoadingPage.baml
+C:\Users\USER\source\repos\hackaton-frontend\obj\Debug\GeneratedInternalTypeHelper.g.cs

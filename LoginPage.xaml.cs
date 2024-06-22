@@ -25,10 +25,17 @@ namespace sad
 			InitializeComponent();
 		}
 
+
+
 		private void Register_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
-		
+
+
+		private void ButtonLogin_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }

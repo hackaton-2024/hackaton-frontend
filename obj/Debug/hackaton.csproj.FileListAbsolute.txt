@@ -13,3 +13,5 @@ D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debu
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\hackaton.csproj.CoreCompileInputs.cache
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\sad.exe
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\sad.pdb
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoginPage.g.cs
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoginPage.baml

@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sad"
         mc:Ignorable="d"
-        Title="hackaton" Height="450" Width="800"
+        Title="hackaton" Height="1080" Width="1920"
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
+        <ContentControl x:Name="MainContent"></ContentControl>
         
+        
+
     </Grid>
 </Window>

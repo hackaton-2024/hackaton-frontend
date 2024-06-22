@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\App.xaml
-3212987035
+41348939341
 
-8-135686815
+11-1759941818
 14-1281244170
-HomePage.xaml;LoginPage.xaml;MainWindow.xaml;
+HomePage.xaml;LoadingWindow.xaml;LoginPage.xaml;MainWindow.xaml;
 
-True
+False
 

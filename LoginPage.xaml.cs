@@ -16,6 +16,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using Newtonsoft.Json;
+using System.IO;
+using sad.Services;
+using System.Net;
+
 
 namespace sad
 {
@@ -27,23 +31,22 @@ namespace sad
 		public LoginPage()
 		{
 			InitializeComponent();
-			
 		}
 
 		public class LoginRequest
 		{
-			public string Email { get; set;}
-            public string Password { get; set; }
+			public string email { get; set;}
+            public string password { get; set; }
         }
 
-
+		//Login Button Logic with API Confiramtion
 		private async void ButtonLogin_Click(object sender, RoutedEventArgs e)
 		{
-			string url = "https://3fad-149-62-209-202.ngrok-free.app/api/login";
-			string email = TextBoxEmail.Text;
-			string password = PasswordBoxLogin.Password; // Using PasswordBox for password input
+			string url = "https://disastersafe.loca.lt/api/login";
+			string Email = TextBoxEmail.Text;
+			string Password = PasswordBoxLogin.Password; // Using PasswordBox for password input
 
-			if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+			if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
 			{
 				MessageBox.Show("Please enter both email and password!");
 				return;
@@ -51,21 +54,40 @@ namespace sad
 
 			LoginRequest request = new LoginRequest
 			{
-				Email = email,
-				Password = password
+				email = Email,
+				password = Password
 			};
 
 			// Get response from the server with login details
-			string response = await SendLoginRequestAsync(url, request);
+			var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
+			var response = await ApiClient.PostWithAutoRefreshAsync(content);
 
-			// Display response in TextBlock
-			if (!string.IsNullOrEmpty(response))
+			if (response.IsSuccessStatusCode)
 			{
-				MessageBox.Show("Response from server: " + response);
+				var result = await response.Content.ReadAsStringAsync();
+				dynamic json = JsonConvert.DeserializeObject<dynamic>(result);
+				string token = json.accessToken;
+				string refreshToken = json.refresh_token;
+
+				TokenManager.SaveToken(token);
+				TokenManager.SaveRefreshToken(refreshToken);
+				ApiClient.SetBearerToken(token);
+
+				NavigateToHomePage();
 			}
+
 			else
 			{
-				MessageBox.Show("Failed to get response from server");
+				MessageBox.Show("Login failed.");
+			}
+		}
+
+		private void NavigateToHomePage()
+		{
+			var parent = this.Parent as ContentControl;
+			if (parent != null)
+			{
+				parent.Content = new HomePage();
 			}
 		}
 
@@ -93,11 +115,11 @@ namespace sad
 		}
 
 
-		private void Register_Click(object sender, RoutedEventArgs e) //Forwards the user to the 'Register Page' UserControl
+		//Don't have an account logic forward to RegisterPage
+		private void Register_Click(object sender, RoutedEventArgs e) //Forwards the user to the 'Register Page' UserControl - Encho's Work
 		{
 			MessageBox.Show("nigger");
 		}
-
 
 
 	}

@@ -58,7 +58,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Services\ApiClient.cs" />
+    <Compile Include="Services\TokenManager.cs" />
     <Page Include="HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,6 +82,9 @@
     </Compile>
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingWindow.xaml.cs">
+      <DependentUpon>LoadingWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -121,6 +130,13 @@
   <ItemGroup>
     <Resource Include="imgsrc\training.png" />
     <Resource Include="imgsrc\volunteer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgsrc\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgsrc\logoLoading.png" />
+    <Resource Include="imgsrc\logoMain.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

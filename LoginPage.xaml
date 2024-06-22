@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:sad"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="400">
+             d:DesignHeight="550" d:DesignWidth="450"
+             >
 
     <Grid Margin="40" Background="White">
         <Grid.RowDefinitions>
@@ -17,7 +18,7 @@
 
         <!-- Logo and Title -->
         <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" Margin="0,0,0,40">
-            <Ellipse Width="40" Height="40" Fill="#FFFB6D0E"/>
+            <Image Width="70" Height="70" Source="imgsrc/logoMain.png" Margin="5,5,5,5"/>
             <TextBlock Text="DisasterSafe" FontSize="30" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0"/>
         </StackPanel>
 
@@ -45,24 +46,21 @@
             </ProgressBar>
 
             <!-- Username Field -->
-            <TextBox Grid.Row="1" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300">
-                <TextBox.Text>John Doe</TextBox.Text>
-            </TextBox>
-
-            <!-- Email Field -->
-            <TextBox x:Name="TextBoxEmail" Grid.Row="2" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300">
+            <TextBox x:Name="TextBoxEmail" Grid.Row="1" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300">
                 <TextBox.Text>johndoe@gmail.com</TextBox.Text>
             </TextBox>
 
-            <!-- Password Field -->
-            <PasswordBox x:Name="PasswordBoxLogin" Grid.Row="3" Margin="0,0,0,40" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300"/>
+            <!-- Email Field -->
+            <PasswordBox x:Name="PasswordBoxLogin" Grid.Row="2" Margin="0,0,0,10" Padding="10" FontSize="18" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300" Password="1234">
+            </PasswordBox>
+
 
             <!-- Next Step Button -->
-            <Button Grid.Row="4" Height="60" Content="Влез" FontSize="18" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300" Background="#FFFB6D0E"/>
+            <Button Grid.Row="4" Click="ButtonLogin_Click" Height="60" Content="Влез" FontSize="18" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Top" MaxWidth="300" Background="#FFFB6D0E"/>
         </Grid>
 
         <!-- Already have an account -->
-        <Label Grid.Row="3" Content="Нямаш профил? НАПРАВИ СИ ТУК!" FontSize="16" Foreground="Orange" HorizontalAlignment="Center" Margin="0,40,0,0" MouseLeftButtonUp="Register_Click"/>
+        <Label Grid.Row="3" Content="Нямаш профил? НАПРАВИ СИ ТУК!" FontSize="18" Foreground="#FFFB6D0E" HorizontalAlignment="Center" Margin="0,40,0,0" MouseLeftButtonUp="Register_Click" FontWeight="Bold"/>
     </Grid>
 
 </UserControl>

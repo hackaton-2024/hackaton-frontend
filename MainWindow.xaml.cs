@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sad.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,8 +26,10 @@ namespace sad
 			InitializeComponent();
 			AdjustWindowToAllScreens(this);
 			SourceInitialized += OnSourceInitialized;
-			MainContent.Content = new LoginPage();
+			LoadTokenAndNavigate();
+			//MainContent.Content = new LoginPage();
 		}
+
 		private void OnSourceInitialized(object sender, EventArgs e)
 		{
 			AdjustWindowToAllScreens(this);
@@ -41,12 +44,38 @@ namespace sad
 			var maxBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
 
 			// Set window position and size
-			window.Left = minLeft;
-			window.Top = minTop;
-			window.Width = maxRight - minLeft;
-			window.Height = maxBottom - minTop;
+			/*			window.Left = minLeft;
+						window.Top = minTop;*/
+			window.Width = 450;
+			window.Height = 600;
 
 			window.WindowState = WindowState.Maximized;
+		}
+
+
+		//TOKENS
+		private void LoadTokenAndNavigate()
+		{
+			var token = TokenManager.GetToken();
+			if (token != null)
+			{
+				ApiClient.SetBearerToken(token);
+				NavigateToHomePage();
+			}
+			else
+			{
+				NavigateToLoginPage();
+			}
+		}
+
+		public void NavigateToHomePage()
+		{
+			MainContent.Content = new HomePage();
+		}
+
+		public void NavigateToLoginPage()
+		{
+			MainContent.Content = new LoginPage();
 		}
 
 	}

@@ -6,14 +6,11 @@
         xmlns:local="clr-namespace:sad"
         mc:Ignorable="d"
         Title="hackaton"
-        WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
         Background="White"
         >
     <Grid>
         <ContentControl x:Name="MainContent"></ContentControl>
         
-        
-
     </Grid>
 </Window>

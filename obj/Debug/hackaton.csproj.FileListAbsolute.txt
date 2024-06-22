@@ -20,3 +20,5 @@ D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\bin\Debu
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\HomePage.g.cs
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\HomePage.baml
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\hackaton.csproj.CopyComplete
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoadingWindow.g.cs
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoadingWindow.baml

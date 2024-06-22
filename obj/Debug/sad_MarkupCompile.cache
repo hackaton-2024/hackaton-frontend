@@ -9,25 +9,12 @@ sad
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
 C:\Users\USER\source\repos\hackaton-frontend\App.xaml
-1219584333
+7-2115148261
 
-6-502434485
-=======
-D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\App.xaml
-3212987035
+11-968443893
+14-1606969804
+HomePage.xaml;LoadingPage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;RegisterPage2.xaml;RegisterPage3.xaml;
 
-<<<<<<< HEAD
-61732194693
->>>>>>> ee32fc1abe0daff7d72ecb91d6d5c4152635eea9
-13-1310406943
-LoginPage.xaml;MainWindow.xaml;
-=======
-71946401803
-14-1281244170
-HomePage.xaml;LoginPage.xaml;MainWindow.xaml;
->>>>>>> 4012b8e7589937edfbc161c530503c3c579fceef
-
-True
+False
 

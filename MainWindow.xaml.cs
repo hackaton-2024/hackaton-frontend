@@ -1,54 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using sad;
+using System;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
-namespace sad
+namespace WpfApp
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-			AdjustWindowToAllScreens(this);
-			SourceInitialized += OnSourceInitialized;
-			MainContent.Content = new LoginPage();
-		}
-		private void OnSourceInitialized(object sender, EventArgs e)
-		{
-			AdjustWindowToAllScreens(this);
-		}
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SwitchToRegisterPage1(); // Initially display UserControl1
+        }
 
-		private void AdjustWindowToAllScreens(Window window)
-		{
-			// Initialize with primary screen size
-			var minLeft = SystemParameters.VirtualScreenLeft;
-			var minTop = SystemParameters.VirtualScreenTop;
-			var maxRight = SystemParameters.VirtualScreenLeft + SystemParameters.VirtualScreenWidth;
-			var maxBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
+        private void SwitchToRegisterPage1()
+        {
+            var uc1 = new RegisterPage();
+            uc1.SwitchRegisterPage2 += (s, e) => SwitchToRegisterPage2();
+            MainContent.Content = uc1;
+        }
 
-			// Set window position and size
-			window.Left = minLeft;
-			window.Top = minTop;
-			window.Width = maxRight - minLeft;
-			window.Height = maxBottom - minTop;
+        private void SwitchToRegisterPage2()
+        {
+            var uc2 = new RegisterPage2();
+            uc2.SwitchToRegisterPage3 += (s, e) => SwitchToRegisterPage3();
+            MainContent.Content = uc2;
+        }
 
-			window.WindowState = WindowState.Maximized;
-		}
-
-	}
+        private void SwitchToRegisterPage3()
+        {
+            var uc3 = new RegisterPage3();
+            MainContent.Content = uc3;
+        }
+    }
 }
-

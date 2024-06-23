@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:sad"
              StartupUri="LoadingWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="ZenDots">
+            <Setter Property="TextElement.FontFamily" Value="/Fonts/#Zen Dots"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

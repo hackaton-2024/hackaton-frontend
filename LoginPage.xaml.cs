@@ -118,7 +118,11 @@ namespace sad
 		//Don't have an account logic forward to RegisterPage
 		private void Register_Click(object sender, RoutedEventArgs e) //Forwards the user to the 'Register Page' UserControl - Encho's Work
 		{
-			MessageBox.Show("nigger");
+			var parent = this.Parent as ContentControl;
+			if(parent != null)
+			{
+				parent.Content = new RegisterPage();
+			}
 		}
 
 

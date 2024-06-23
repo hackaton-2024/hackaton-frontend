@@ -22,3 +22,10 @@ D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debu
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\hackaton.csproj.CopyComplete
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoadingWindow.g.cs
 D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\LoadingWindow.baml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\RegisterPage.g.cs
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\RegisterPage2.g.cs
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\RegisterPage3.g.cs
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\App.baml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\RegisterPage.baml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\RegisterPage2.baml
+D:\Visual Studio Community Projects\LoginPageHackaton\hackaton-frontend\obj\Debug\RegisterPage3.baml

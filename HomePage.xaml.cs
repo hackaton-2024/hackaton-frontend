@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sad.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,21 @@ namespace sad
 		{
 			InitializeComponent();
 		}
-	}
+
+		private void LogoutButton_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBoxResult result = MessageBox.Show("Сигурни ли сте че искате да излезете от профила си?", "Потвърждение за излизане", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+			if(result == MessageBoxResult.Yes)
+			{
+				TokenManager.DeleteTokens();
+
+				var parent = this.Parent as ContentControl;
+				if (parent != null)
+				{
+					parent.Content = new LoginPage();
+				}
+			}
+        }
+    }
 }

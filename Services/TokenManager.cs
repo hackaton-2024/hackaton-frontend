@@ -40,5 +40,17 @@ namespace sad.Services
 		{
 			File.WriteAllText(refreshTokenFilePath, refreshToken);
 		}
+
+		public static void DeleteTokens()
+		{
+			if (File.Exists(tokenFilePath))
+			{
+				File.Delete(tokenFilePath);
+			}
+			if (File.Exists(refreshTokenFilePath))
+			{
+				File.Delete(refreshTokenFilePath);
+			}
+		}
 	}
 }

@@ -17,14 +17,14 @@
         </Grid.RowDefinitions>
 
         <!-- Logo and Title -->
-        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" Margin="0,0,0,40">
+        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,40">
             <Image Width="70" Height="70" Source="imgsrc/logoMain.png" Margin="5,5,5,5"/>
-            <TextBlock Text="DisasterSafe" FontSize="30" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <TextBlock Text="DisasterSafe" FontSize="30" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource ZenDots}" />
         </StackPanel>
 
         <!-- Encouraging Text -->
         <TextBlock Grid.Row="1" Text="Вход"
-                   FontSize="32" TextWrapping="Wrap" Margin="0,0,0,40" HorizontalAlignment="Center" TextAlignment="Center"/>
+                   FontSize="36" TextWrapping="Wrap" Margin="0,0,0,32" HorizontalAlignment="Center" TextAlignment="Center"/>
 
         <!-- Registration Form -->
         <Grid Grid.Row="2" VerticalAlignment="Top">
@@ -36,7 +36,7 @@
             </Grid.RowDefinitions>
 
             <!-- Progress Bar -->
-            <ProgressBar Grid.Row="0" Height="15" Value="100" Margin="0,0,0,20" MaxWidth="300" Orientation="Vertical">
+            <ProgressBar Grid.Row="0" Height="15" Value="100" Margin="0,0,0,20" MaxWidth="300" Orientation="Horizontal">
                 <ProgressBar.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFFB6D0E" Offset="0.007"/>

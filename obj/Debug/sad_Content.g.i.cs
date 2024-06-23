@@ -8,7 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/logoloading.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/logomain.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/imageeq.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/imagefire.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/imageflood.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/imagelandslides.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imgsrc/imageptp.png")]
 
 

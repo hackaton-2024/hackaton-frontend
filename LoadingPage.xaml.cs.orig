@@ -26,15 +26,28 @@ namespace sad
         {
             InitializeComponent();
             loadprogressbar();
+<<<<<<< HEAD
           
         }
+        
+        private async void loadprogressbar()
+=======
+        }
         private void loadprogressbar()
+>>>>>>> 1528a05c7ca4bfbad86f29f8c655fc261aa1bd78
         {
             Duration dur = new Duration(TimeSpan.FromSeconds(30));
             DoubleAnimation dblani = new DoubleAnimation(200.0, dur);
             progressBar.BeginAnimation(ProgressBar.ValueProperty, dblani);
+<<<<<<< HEAD
           
         }
 
     }
 }
+=======
+        }
+
+    }
+}
+>>>>>>> 1528a05c7ca4bfbad86f29f8c655fc261aa1bd78

@@ -1,6 +1,19 @@
 ﻿<UserControl x:Class="sad.LoadingPage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<<<<<<< HEAD
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:sad"
+             mc:Ignorable="d"
+            
+             d:Height="350" d:Width="200">
+    <Grid>
+        <ProgressBar Name="progressBar" Width="100" Height="20" Value="0" Minimum="0" Maximum="100" Margin="50,263,50,117"/>
+        <ContentControl x:Name="NextContent"></ContentControl>
+    </Grid>
+</UserControl>
+=======
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:sad"
@@ -12,3 +25,4 @@
         <ProgressBar Name="progressBar" Width="100" Height="20" Value ="0" Minimum="0" Maximum="100" Margin="50,263,50,117"/>
     </Grid>
 </UserControl>
+>>>>>>> 1528a05c7ca4bfbad86f29f8c655fc261aa1bd78

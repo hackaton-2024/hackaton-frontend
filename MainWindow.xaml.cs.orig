@@ -6,13 +6,14 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
-namespace sad
+namespace WpfApp
 {
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+<<<<<<< HEAD
             SwitchToRegisterPage1(); // Initially display UserControl1
         }
 
@@ -35,6 +36,13 @@ namespace sad
             var uc3 = new RegisterPage3();
             MainContent.Content = uc3;
         }
+=======
+            MainContent.Content = new LoadingPage
+                ();
+         
+        }
+
+       
+>>>>>>> 1528a05c7ca4bfbad86f29f8c655fc261aa1bd78
     }
 }
-

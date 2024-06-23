@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+<<<<<<< HEAD
+      
+        Height="500" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal">
+    
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ContentControl x:Name="MainContent"></ContentControl>
+
+=======
+        WindowStyle="None"
+        Height="350" Width="200"
+        WindowStartupLocation="CenterScreen">
+   
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ContentControl x:Name="MainContent"></ContentControl>
+            
+>>>>>>> 1528a05c7ca4bfbad86f29f8c655fc261aa1bd78
+        </StackPanel>
+    </Grid>
+</Window>

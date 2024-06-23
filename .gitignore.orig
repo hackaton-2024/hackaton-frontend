@@ -1,5 +1,8 @@
 .vs
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1528a05c7ca4bfbad86f29f8c655fc261aa1bd78
 # Ignore build outputs
 /bin/
 /obj/
